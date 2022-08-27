@@ -39,6 +39,18 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "djangorestframework"
+version = "3.13.1"
+description = "Web APIs for Django, made easy."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+django = ">=2.2"
+pytz = "*"
+
+[[package]]
 name = "dynaconf"
 version = "3.1.9"
 description = "The dynamic configurator for your Python Project"
@@ -55,6 +67,14 @@ test = ["pytest", "pytest-cov", "pytest-xdist", "pytest-mock", "flake8", "pep8-n
 toml = ["toml"]
 vault = ["hvac"]
 yaml = ["ruamel.yaml"]
+
+[[package]]
+name = "pytz"
+version = "2022.2.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "sqlparse"
@@ -75,7 +95,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "a915303f33ed2bf93b60d8502668e943de4a31c566c4f2dd4e085aa3ef6240b2"
+content-hash = "077fa3111fccc929b85aaa3dab0aecbef9b5831356157d87a60d5df34a46ef38"
 
 [metadata.files]
 asgiref = []
@@ -98,7 +118,9 @@ asgiref = []
     {file = "backports.zoneinfo-0.2.1.tar.gz", hash = "sha256:fadbfe37f74051d024037f223b8e001611eac868b5c5b06144ef4d8b799862f2"},
 ]
 django = []
+djangorestframework = []
 dynaconf = []
+pytz = []
 sqlparse = [
     {file = "sqlparse-0.4.2-py3-none-any.whl", hash = "sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d"},
     {file = "sqlparse-0.4.2.tar.gz", hash = "sha256:0c00730c74263a94e5a9919ade150dfc3b19c574389985446148402998287dae"},
